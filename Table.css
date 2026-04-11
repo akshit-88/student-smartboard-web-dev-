@@ -1,0 +1,149 @@
+/* ── Table Wrapper ── */
+.table-section {
+  padding: 0;
+}
+
+.table-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+  letter-spacing: 0.01em;
+}
+
+.student-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--row-alt);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
+/* ── Table ── */
+.scoreboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.scoreboard-table thead {
+  background: var(--row-alt);
+}
+
+.scoreboard-table thead th {
+  padding: 11px 20px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.scoreboard-table thead th:last-child {
+  text-align: center;
+}
+
+.scoreboard-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.12s ease;
+}
+
+.scoreboard-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.scoreboard-table tbody tr:nth-child(even) {
+  background: var(--row-alt);
+}
+
+.scoreboard-table tbody tr:hover {
+  background: #eef3ff;
+}
+
+/* ── Table Cells ── */
+.scoreboard-table td {
+  padding: 12px 20px;
+  vertical-align: middle;
+}
+
+/* Serial number cell */
+.cell-num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  width: 48px;
+}
+
+/* Name cell */
+.cell-name {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Score input cell */
+.cell-score {
+  width: 130px;
+}
+
+.score-input {
+  width: 90px;
+  padding: 6px 10px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-dark);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.score-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.15);
+}
+
+/* Status badge cell */
+.cell-status {
+  text-align: center;
+  width: 100px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.badge-pass {
+  background: var(--pass-bg);
+  color: var(--pass-text);
+}
+
+.badge-fail {
+  background: var(--fail-bg);
+  color: var(--fail-text);
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 40px 24px;
+  color: var(--text-muted);
+  font-size: 14px;
+}

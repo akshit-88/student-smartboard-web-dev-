@@ -1,0 +1,50 @@
+/* ── CSS Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary:       #4f8cff;
+  --primary-dark:  #3a74e8;
+  --pass-bg:       #e6f9f0;
+  --pass-text:     #1a7a4a;
+  --fail-bg:       #fdecea;
+  --fail-text:     #c0392b;
+  --text-dark:     #2d3748;
+  --text-muted:    #718096;
+  --border:        #e2e8f0;
+  --row-alt:       #f7f9fc;
+  --card-bg:       #ffffff;
+  --page-bg:       #f0f2f5;
+  --shadow:        0 2px 12px rgba(0, 0, 0, 0.08);
+  --radius:        8px;
+  --font-main:     'DM Sans', sans-serif;
+  --font-mono:     'DM Mono', monospace;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--page-bg);
+  color: var(--text-dark);
+  min-height: 100vh;
+  padding: 40px 16px 60px;
+}
+
+/* ── Card Container ── */
+.app-container {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Card ── */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
